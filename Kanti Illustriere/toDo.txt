@@ -1,0 +1,8 @@
+Thing toDo:
+
+Done:
+- im About sind wenn man das Menu oeffnet die Artikel ueber dem Menu.
+
+to do:
+- Bildanpassung auf Bildschirmgroesse.
+- Scrollfunktion geht nicht bis ganz nach unten.

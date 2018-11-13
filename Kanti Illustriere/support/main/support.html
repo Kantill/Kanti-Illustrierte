@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kanti Illustrierte</title>
+    <link rel="stylesheet" href="/css/styleMobile.css" media="only screen and (max-width: 480px)">
+    <link rel="stylesheet" href="/css/styleTablet.css" media="only screen and (min-width: 480px) and (max-width: 1400px)">
+    <link rel="stylesheet" href="/css/styleDesktop.css" media="only screen and (min-width: 1400px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div class="window">
+      <div class="header">
+        <div class="burger-container">
+          <div id="burger">
+            <div class="bar topBar"></div>
+            <div class="mid midBar"></div>
+            <div class="bar btmBar"></div>
+          </div>
+        </div>
+        <div class="header-link"><a class="header-link" href="/news/main/news.html">Support</a></div>
+        <ul class="menu">
+          <li class="menu-item"><a href="/news/main/news.html">News</a></li>
+          <li class="menu-item"><a href="/student/main/student.html">Schüler</a></li>
+          <li class="menu-item"><a href="/teacher/main/teacher.html">Lehrer</a></li>
+          <li class="menu-item"><a href="/comedy/main/comedy.html">Comedy</a></li>
+          <li class="menu-item"><a href="/About/main/about.html">About</a></li>
+          <li class="menu-item"><a href="/support/main/support.html">Support</a></li>
+        </ul>
+        <div class="fa fa-pencil"><a class="fa fa-pencil" href="/support/articles/weneedyou.html"></a></div>
+      </div>
+  
+      <!--All the content of the page-->
+      <div class="content">
+        <div class="article">          
+          <img onclick="window.location='/support/articles/howTo.html';" class="article-img" src="/support/img/howTo.jpg" alt="HowTo">
+              <a class="article-link" href="/support/articles/howTo.html">How To</a>
+      </div>
+
+      <div class="footer">
+          <hr class="line">
+          <br>
+          <p class="copyright">Copyright © 2018 Kanti Ill. Alle Rechte vorbehalten.</p>
+          <div class="footer-link-container">
+            <a class="footer-link" href="/About/articles/sitemap.html">Sitemap  |  </a>
+            <a class="footer-link" href="/support/main/support.html">Support  |  </a>
+            <a class="footer-link" href="/About/articles/datenschutz.html">Datenschutz  |  </a>
+            <a class="footer-link" href="">Nutzungsbedingungen</a><br>
+          </div>
+          <br>
+          <p class="founder">designed and produced by Flo W. | Luca H. | Linus S.</p>
+        </div>
+
+      </div>
+      
+    </div>
+
+  <script>
+
+  (function() {
+    var burger = document.querySelector(".burger-container"),
+        header = document.querySelector(".header");
+
+    burger.onclick = function() {
+        header.classList.toggle("menu-opened");
+    };
+   })();
+
+    </script>
+
+</body>
