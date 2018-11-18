@@ -5,6 +5,9 @@ Done:
 - Scrollfunktion geht nicht bis ganz nach unten.
 - Bildanpassung auf Bildschirmgroesse.
 - Footer div unter Articles div setzten (Möglicherweise mit float clear (clear: both;))
+- alle Seiten mit dem Articles div ausstatten (About und News haben es schon!)
 
 to do:
-- alle Seiten mit dem Articles div ausstatten (About und News haben es schon!)
+- Artikel einfügen
+- Seitennamen bestimmen (bessere als bis jetzt)
+- Sitemap am Schluss überarbeiten 
