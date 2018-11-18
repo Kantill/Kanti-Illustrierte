@@ -355,6 +355,7 @@ body {
   overflow: auto;
   top: 70px;
   left: 5%;
+  right: 5%;
   height: 100%;
   width: 90%;
 }
@@ -364,8 +365,18 @@ body {
   display:none;
 }
 
-.article-link {
-  font-size: 50px;
+.content .articles {
+  position: relative;
+  display: block;
+  padding-bottom: 0%;
+  margin-bottom: 50px;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+}
+
+.articles .article-link {
+  font-size: 3.2vw;
   font-weight: bold;
   text-align: center;
   position: absolute;
@@ -379,8 +390,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 65%;
+  height: 30%;
   padding: 20px;
-  text-align: center;
 }
 
 .content-title {
@@ -390,41 +401,42 @@ body {
   font-weight: bold;
 }
 
-.empty-line {
+.articles .empty-line {
 
 }
 
-.break {
+.articles .break {
 
 }
 
-.content .article {
+.content .articles .article {
   position: relative;
   display: block;
-  height: 230px;
+  padding-bottom: 20%;
   margin-bottom: 30px;
-  margin-left: 30px;
+  margin-left: 1vw;
+  margin-right: 1vw;
   width: 30%;
   float: left;
 }
 
-.content .article-img {
+.content .articles .article-img {
   position: absolute;
   display: block;
-  height: auto;
+  height: 100%;
   width: 100%;
   filter: blur(2px);
 }
 
 /*footer Line*/
-.window .footer {
-  position: absolute;
+.content .footer {
+  position: relative;
   display: block;
-  bottom: 10%;
   left: 5%;
   right: 5%;
   height: 200px;
   width: 90%;
+  clear: both;
 }
 
 .footer .copyright {
