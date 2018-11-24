@@ -185,6 +185,26 @@ body {
           transform: translateX(-50%);
 }
 
+.content .pencil {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  line-height: 50px;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  color: #FFF;
+  font-size: 150px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+  .pencil .fa.fa-pencil {
+  text-decoration: none;
+  color: black;
+}
+
   .fa.fa.fa-paper-plane {
     text-decoration: none;
   }
@@ -433,8 +453,20 @@ body {
   display: block;
   height: 100%;
   width: 100%;
-  filter: blur(2px);
-  filter: grayscale(100%)
+  filter: blur(2px) grayscale(100%);
+}
+
+/*Text Artikel Formatierung*/
+.content .text-title {
+  font-size: 7vw;
+}
+
+.content .text-subtitle {
+  font-size: 3.5vw;
+}
+
+.content .text-text {
+  font-size: 3vw;
 }
 
 
