@@ -352,7 +352,7 @@ body {
 }
 
 .sitemaplink {
-  color: lawngreen;
+  color: black;
   font-size: 18px;
   font-family: Helvetica;
   position: relative;
@@ -361,7 +361,17 @@ body {
 
 .sitemapsublink {
   left: 10px;
-  color: lawngreen;
+  color: black;
+  font-size: 16px;
+  font-family: Helvetica;
+  position: relative;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.sitemapsubsublink {
+  left: 20px;
+  color: black;
   font-size: 16px;
   font-family: Helvetica;
   position: relative;
@@ -395,6 +405,16 @@ body {
   width: 90%;
 }
 
+.content .team {
+  position: relative;
+  display: block;
+  padding-bottom: 0%;
+  margin-bottom: 0px;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+}
+
 .articles .article-link {
   font-size: 3.2vw;
   font-weight: bold;
@@ -414,7 +434,12 @@ body {
   padding: 20px;
 }
 
-.articles .article-link .article-title {
+.articles .article-link .article-title-long {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.articles .article-link .article-title-short {
   font-size: 3.2vw;
   font-weight: bold;
 }
@@ -452,12 +477,50 @@ body {
   border: 3px solid black;
 }
 
+.content .team .member-description {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.content .team .member-description .teammemberimg {
+  position: relative;
+  display: block;
+  padding-bottom: 25%;
+  margin-bottom: 30px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 46%;
+  border: 3px solid black;
+  float: left;
+}
+
+.content .team .member-description .teammemberinfo {
+  position: relative;
+  display: block;
+  padding-bottom: 15%;
+  margin-bottom: 30px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 46%;
+  float: left;
+  font-size: 2vw;
+}
+
 .content .articles .article-img {
   position: absolute;
   display: block;
   height: 100%;
   width: 100%;
   filter: blur(2px) grayscale(100%);
+}
+
+.content .team .portrait {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 /*Text Artikel Formatierung*/
@@ -471,6 +534,11 @@ body {
 
 .content .text-text {
   font-size: 2.5vw;
+}
+
+/*CSS für Videos*/
+.video {
+  height: 500px;
 }
 
 /*footer Line*/
