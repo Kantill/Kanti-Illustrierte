@@ -351,7 +351,7 @@ body {
 }
 
 .sitemaplink {
-  color: orangered;
+  color: black;
   font-size: 18px;
   font-family: Helvetica;
   position: relative;
@@ -360,7 +360,17 @@ body {
 
 .sitemapsublink {
   left: 10px;
-  color: orangered;
+  color: black;
+  font-size: 16px;
+  font-family: Helvetica;
+  position: relative;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.sitemapsubsublink {
+  left: 20px;
+  color: black;
   font-size: 16px;
   font-family: Helvetica;
   position: relative;
@@ -394,6 +404,16 @@ body {
   width: 90%;
 }
 
+.content .team {
+  position: relative;
+  display: block;
+  padding-bottom: 0%;
+  margin-bottom: 50px;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+}
+
 .articles .article-link {
   font-size: 10vw;
   font-weight: bold;
@@ -413,13 +433,18 @@ body {
   padding: 20px;
 }
 
-.articles .article-link .article-title {
+.articles .article-link .article-title-long {
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.articles .article-link .article-title-short {
   font-size: 9vw;
   font-weight: bold;
 }
 
 .articles .article-link .article-date {
-  font-size: 5vw;
+  font-size: 3vw;
   font-weight: bold;
   color: orangered;
 }
@@ -456,6 +481,40 @@ body {
   filter: blur(2px) grayscale(100%);
 }
 
+.content .team .member-description {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.content .team .member-description .teammemberimg {
+  position: relative;
+  display: block;
+  padding-bottom: 50%;
+  margin-bottom: 30px;
+  width: 100%;
+  border: 3px solid black;
+}
+
+.content .team .member-description .teammemberinfo {
+  position: relative;
+  display: block;
+  padding-bottom: 10%;
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 3.5vw;
+  text-align: center;
+}
+
+.content .team .portrait {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  filter: blur(2px) grayscale(100%);
+}
+
 /*Text Artikel Formatierung*/
 .content .text-title {
   font-size: 7vw;
@@ -469,6 +528,10 @@ body {
   font-size: 3vw;
 }
 
+/*CSS für Videos*/
+.video {
+  height: 200px;
+}
 
 /*footer Line*/
 .content .footer {
