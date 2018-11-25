@@ -1,0 +1,322 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url(https://fonts.googleapis.com/css?family=Ek+Mukta:200);
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.4;
+  background-color: white;
+}
+
+.container{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%
+}
+
+.container span{
+  text-transform: uppercase;
+  display: block;
+}
+
+.container .title{
+  left: 0%;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: black;
+  position: relative;
+  animation: text 3s 1;
+}
+
+.container .text{
+  font-size: 15px;
+  left: 2%;
+}
+
+.container .text .animation{
+  text-decoration: none;
+}
+
+.animation {color: lawngreen;}
+
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 13px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+  
+}
+
+
+/*CSS für das SideMenu*/
+.window {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+  background: white;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 2.7em;
+    width: 100%;
+    color: #FAFAFA;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    overflow: hidden;
+    transition: all 0.5s ease-out, background 1s ease-out;
+    transition-delay: 0.2s;
+    z-index: 1;
+}
+
+.header .burger-container {
+  display: none;
+}
+
+.header .header-link {
+  display: none;
+}
+
+.header .fa {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+  .fa.fa.fa-paper-plane {
+    text-decoration: none;
+  }
+
+  .fa.fa.fa-pencil {
+    text-decoration: none;
+  }
+
+.header .fa.fa-paper-plane {
+  right: 0;
+  top: 0;
+  left: auto;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  transition: -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition-delay: 0.65s;
+}
+
+.header .fa.fa-pencil {
+  right: 0;
+  top: 0;
+  left: auto;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  transition: -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition-delay: 0.65s;
+}
+
+.header ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header ul.menu li.menu-item {
+    padding-right: 70px;
+    padding-left: 70px;
+    display: inline;
+}
+
+.header ul.menu li.menu-item a {
+    text-decoration: none;
+    color: white;
+}
+
+/*CSS für die SiteMap*/
+.sitemapgroup {
+  color: black;
+  font-size: 35px;
+  font-family: Helvetica;
+  position: relative;
+}
+
+.sitemaplink {
+  color: lawngreen;
+  font-size: 18px;
+  font-family: Helvetica;
+  position: relative;
+  text-decoration: none;
+}
+
+.sitemapsublink {
+  left: 10px;
+  color: lawngreen;
+  font-size: 16px;
+  font-family: Helvetica;
+  position: relative;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+/*CSS für den Content*/
+.content {
+  position: absolute;
+  overflow: auto;
+  top: 70px;
+  left: 5%;
+  right: 5%;
+  height: 100%;
+  width: 90%;
+}
+
+/*Versteckt die Scrollbar für mobile Geräte*/
+::-webkit-scrollbar {
+  display:none;
+}
+
+.content .articles {
+  position: relative;
+  display: block;
+  padding-bottom: 0%;
+  margin-bottom: 0px;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+}
+
+.articles .article-link {
+  font-size: 3.2vw;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  text-decoration: none;
+  color: lawngreen;
+
+  background-color: rgb(84,84,84); /* Fallback color */
+  background-color: rgba(84, 84, 84, 0.5); /* Black w/opacity/see-through */
+  border: 3px solid lawngreen;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  height: 30%;
+  padding: 20px;
+}
+
+.articles .article-link .article-title {
+  font-size: 3.2vw;
+  font-weight: bold;
+}
+
+.articles .article-link .article-date {
+  font-size: 1.8vw;
+  font-weight: bold;
+  color: lawngreen;
+}
+
+.content-title {
+  text-align: center;
+  font-size: 28px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+.articles .empty-line {
+
+}
+
+.articles .break {
+
+}
+
+.content .articles .article {
+  position: relative;
+  display: block;
+  padding-bottom: 25%;
+  margin-bottom: 30px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 46%;
+  float: left;
+  border: 3px solid black;
+}
+
+.content .articles .article-img {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  filter: blur(2px) grayscale(100%);
+}
+
+/*footer Line*/
+.content .footer {
+  position: relative;
+  display: block;
+  left: 5%;
+  right: 5%;
+  height: 200px;
+  width: 90%;
+  clear: both;
+}
+
+.footer .copyright {
+  text-align: center;
+  color: darkgrey;
+  font-size: 10px;
+}
+
+.footer .footer-link-container{
+  text-align: center;
+
+}
+
+.footer .footer-link {
+  color: grey;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.footer .founder {
+  color: darkgrey;
+  font-size: 10px;
+  text-align: center;
+}

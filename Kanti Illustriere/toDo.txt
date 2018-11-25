@@ -6,8 +6,11 @@ Done:
 - Bildanpassung auf Bildschirmgroesse.
 - Footer div unter Articles div setzten (Möglicherweise mit float clear (clear: both;))
 - alle Seiten mit dem Articles div ausstatten (About und News haben es schon!)
+- Artikel einfügen
 
 to do:
-- Artikel einfügen
+- article-title class Respnsive machen
 - Seitennamen bestimmen (bessere als bis jetzt)
-- Sitemap am Schluss überarbeiten 
+- Sitemap am Schluss überarbeiten
+- Menu für Desktop Modus machen. (test css)
+- Bilder in Artikel einfügen (Mohammad Artikel Thumbnail ändern)
